@@ -1,0 +1,25 @@
+# ==========================
+# OCR Reasoning Engine — Python Dependencies
+# ==========================
+
+# ---- Inference Engine ----
+vllm==0.5.5
+
+# ---- API Framework ----
+fastapi>=0.104.0,<1.0.0
+uvicorn[standard]>=0.24.0,<1.0.0
+
+# ---- Authentication ----
+python-jose[cryptography]>=3.3.0,<4.0.0
+
+# ---- HTTP Client ----
+httpx>=0.25.0,<1.0.0
+
+# ---- Configuration ----
+python-dotenv>=1.0.0,<2.0.0
+
+# ---- Model Dependencies ----
+# Pinned for compatibility with vLLM 0.5.5
+transformers>=4.45.0,<5.0.0
+tokenizers>=0.19.1,<0.21.0
+torch==2.3.0

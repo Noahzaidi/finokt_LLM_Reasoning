@@ -1,0 +1,52 @@
+# ==========================
+# FAI LLM .gitignore
+# ==========================
+
+# ---- Markdown docs (only README is public) ----
+*.md
+!README.md
+
+# ---- Environment & Secrets ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# ---- Virtual Environment ----
+venv/
+.venv/
+env/
+
+# ---- Model Weights (too large for Git) ----
+/models/
+*.safetensors
+*.bin
+*.gguf
+
+# ---- Logs ----
+logs/
+*.log
+
+# ---- IDE & OS ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
